@@ -24,27 +24,33 @@ class GUIDemo(Frame):
         self.new = Button(self)
         self.new["text"] = "New"
         self.new.grid(row=2, column=0)
-        self.new["command"] =  self.newMethod
+        self.new["command"] =  self.newMethod #new這個按鍵的commend屬性,等號右邊為處理按下new的方法
+
         self.load = Button(self)
         self.load["text"] = "Load"
         self.load.grid(row=2, column=1)
         self.load["command"] =  self.loadMethod
+
         self.save = Button(self)
         self.save["text"] = "Save"
         self.save.grid(row=2, column=2)
         self.save["command"] =  self.saveMethod
+
         self.encode = Button(self)
         self.encode["text"] = "Encode"
         self.encode.grid(row=2, column=3)
         self.encode["command"] =  self.encodeMethod
+
         self.decode = Button(self)
         self.decode["text"] = "Decode"
         self.decode.grid(row=2, column=4)
         self.decode["command"] =  self.decodeMethod
+
         self.clear = Button(self)
         self.clear["text"] = "Clear"
         self.clear.grid(row=2, column=5)
         self.clear["command"] =  self.clearMethod
+
         self.copy = Button(self)
         self.copy["text"] = "Copy"
         self.copy.grid(row=2, column=6)
